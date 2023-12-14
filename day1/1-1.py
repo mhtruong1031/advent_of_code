@@ -1,6 +1,7 @@
 def get_value(line: str) -> tuple:
-    nums = '1234567890'
+    nums         = '1234567890'
     nums_in_line = list(filter(lambda char: char in nums, line))
+    
     return nums_in_line[0] + nums_in_line[-1]
 
 def main():
